@@ -1,0 +1,66 @@
+.contact {
+
+	&__list {
+		list-style: none;
+	}
+
+	&__prefix {
+		font-weight: bold;
+		color: color(green);
+	}
+
+	&__title {
+
+		&:not(:last-child) {
+			margin-bottom: 8px;
+		}
+
+	}
+
+	&__item {
+
+		&:not(:last-child) {
+			margin-bottom: 5px;
+		}
+
+	}
+
+	&__icon {
+		width: 15px;
+		height: 15px;
+		color: color(green);
+		margin-top: -1px;
+
+		&:not(:last-child) {
+			margin-right: 10px;
+		}
+
+	}
+
+}
+
+.contact-image {
+
+	img {
+		height: auto;
+
+		box-shadow: 5px 5px 14px 2px rgba(0,0,0,0.2);
+	}
+
+}
+
+.contact-title {
+
+	&:not(:last-child) {
+		margin-bottom: 35px;
+	}
+
+}
+
+.contact-text {
+
+	&:not(:last-child) {
+		margin-bottom: 35px;
+	}
+
+}

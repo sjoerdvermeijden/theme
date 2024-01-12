@@ -1,0 +1,174 @@
+.skills {
+    $gutter: 15px;
+
+    display: flex;
+    flex-wrap: wrap;
+    margin: -$gutter;
+
+    &__item {
+        padding: $gutter;
+        width: p(1, 2);
+    }
+
+    @include mobile {
+
+        &__item {
+            width: p(1, 3);    
+        }
+
+    }
+    
+    @include tablet {
+        
+        &__item {
+            width: p(1, 5);
+        }
+
+    }
+
+}
+
+.skill-item {
+    $root: &;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &__decoration {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border-radius: 2px;
+    }
+
+    &__label {
+        position: absolute;
+        top: 50%;
+        left: 25px;
+        font-weight: bold;
+        transform: translateY(-50%);
+        color: color(grey, darker);
+    }
+
+    &--wordpress {
+        
+        #{$root}__decoration {
+            background: rgba(color(wordpress), 0.8);
+        }
+
+    }
+    
+    &--woocommerce {
+        
+        #{$root}__decoration {
+            background: rgba(color(woocommerce), 0.8);
+        }
+
+    }
+    
+    &--gulp {
+        
+        #{$root}__decoration {
+            background: rgba(color(gulp), 0.8);
+        }
+
+    }
+    
+    &--git {
+        
+        #{$root}__decoration {
+            background: rgba(color(git), 0.8);
+        }
+
+    }
+    
+    &--adobe {
+        
+        #{$root}__decoration {
+            background: rgba(color(adobe), 0.8);
+        }
+
+    }
+    
+    &--mysql {
+        
+        #{$root}__decoration {
+            background: rgba(color(mysql), 0.8);
+        }
+
+    }
+    
+    &--sketch {
+        
+        #{$root}__decoration {
+            background: rgba(color(sketch), 0.8);
+        }
+
+    }
+    
+    &--javascript {
+        
+        #{$root}__decoration {
+            background: rgba(color(javascript), 0.8);
+        }
+
+    }
+    
+    &--html {
+        
+        #{$root}__decoration {
+            background: rgba(color(html), 0.8);
+        }
+
+    }
+    
+    &--webpack {
+        
+        #{$root}__decoration {
+            background: rgba(color(webpack), 0.8);
+        }
+
+    }
+    
+    &--bem {
+        
+        #{$root}__decoration {
+            background: rgba(color(bem), 0.8);
+        }
+
+    }
+    
+    &--php {
+        
+        #{$root}__decoration {
+            background: rgba(color(php), 0.8);
+        }
+
+    }
+    
+    &--css {
+        
+        #{$root}__decoration {
+            background: rgba(color(css), 0.8);
+        }
+
+    }
+    
+    &--command-line {
+        
+        #{$root}__decoration {
+            background: rgba(color(command-line), 0.8);
+        }
+
+    }
+    
+    &--scss {
+        
+        #{$root}__decoration {
+            background: rgba(color(scss), 0.8);
+        }
+
+    }
+
+}

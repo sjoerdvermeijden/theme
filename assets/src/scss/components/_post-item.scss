@@ -1,0 +1,88 @@
+.post-items {
+	$root: &;
+
+	position: relative;
+	z-index: 1;
+
+    &__item {
+
+        &:not(:last-child) {
+            margin-bottom: 40px;
+        }
+
+    }
+
+    &__title {
+
+        &:not(:last-child) {
+            margin-bottom: 35px;
+        }
+
+    }
+
+    &__subtitle {
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-bottom: 25px;
+        }
+
+    }
+
+    &__link {
+        @extend .button;
+    }
+
+    &__label {
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-right: 8px;
+        }
+
+    }
+
+}
+
+.post-item {
+
+	&__title {
+		color: color(grey, darker);
+
+		&:not(:last-child) {
+			margin-bottom: 5px;
+		}
+
+    }
+
+    &__date {
+        display: flex;
+        align-items: center;
+
+        &:not(:last-child) {
+            margin-bottom: 5px;
+        }
+
+    }
+
+    &__link {
+        text-decoration: underline;
+        text-decoration-style: double;
+    }
+
+    &__label {
+        margin-top: 1px;
+    }
+
+    &__icon {
+        width: 20px;
+        height: 20px;
+        color: color(green);
+
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+
+    }
+
+}

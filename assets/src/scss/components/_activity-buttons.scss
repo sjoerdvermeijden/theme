@@ -1,0 +1,48 @@
+.activity-buttons {
+	$root: &;
+
+	display: none;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+
+	&:not(:last-child) {
+		margin-bottom: 70px;
+	}
+
+	&__button {
+
+		&:not(:last-child) {
+			margin-right: 15px;
+		}
+
+		&.is-active {
+
+			#{$root}__link {
+				background: color(grey);
+				color: white;
+			}
+
+		}
+
+	}
+
+	&__link {
+		padding: 10px 15px;
+
+		display: inline-block;
+		border: 1px solid color(grey);
+
+		&:hover,
+		&:focus {
+			cursor: pointer;
+		}
+
+	}
+
+	@include tablet {
+		display: flex;
+	}
+
+}
+

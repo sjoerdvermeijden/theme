@@ -1,0 +1,19 @@
+.breadcrumbs {
+
+	&:not(:last-child) {
+		margin-bottom: 35px;
+	}
+
+    a {
+        color: color(green);
+    }
+
+	@include tablet {
+
+		&:not(:last-child) {
+			margin-bottom: 45px;
+		}
+
+	}
+
+}

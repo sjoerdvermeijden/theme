@@ -1,0 +1,36 @@
+.post {
+
+    &__title {
+
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+
+    }
+
+    &__date {
+		display: flex;
+		align-items: center;
+
+        &:not(:last-child) {
+            margin-bottom: 25px;
+        }
+
+    }
+
+    &__label {
+        display: inline-block;
+    }
+
+    &__icon {
+        width: 20px;
+        height: 20px;
+        color: color(green);
+
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+
+    }
+
+}

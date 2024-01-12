@@ -1,0 +1,43 @@
+.content {
+    $gutter: 20px;
+
+    display: flex;
+    margin: -$gutter;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: $gutter;
+        text-align: center;
+
+        &--illustration {
+            display: none;
+        }
+
+	}
+
+	&__image {
+
+		img {
+			width: auto;
+		}
+
+	}
+
+    @include tablet {
+
+        &__item {
+            width: p(1, 2);
+            text-align: left;
+
+            &--illustration {
+				display: flex;
+				align-items: center;
+            }
+
+        }
+
+    }
+
+}

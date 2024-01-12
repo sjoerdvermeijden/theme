@@ -1,0 +1,12 @@
+.about {
+	text-align: left;
+
+	&__title {
+
+		&:not(:last-child) {
+			margin-bottom: 25px;
+		}
+
+	}
+
+}

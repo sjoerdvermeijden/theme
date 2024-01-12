@@ -1,0 +1,31 @@
+.logo {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	margin-right: auto;
+	color: color(gray, dark);
+
+	&__title {
+		font-size: rem(22px);
+		line-height: 1.2;
+		font-weight: 600;
+
+		span {
+			color: color(gray);
+		}
+
+	}
+
+    @include tablet {
+
+		&__title {
+			font-size: rem(32px);
+		}
+
+        &:not(:last-child) {
+            margin-right: auto;
+        }
+
+    }
+
+}

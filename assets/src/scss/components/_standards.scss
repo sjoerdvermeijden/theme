@@ -1,0 +1,54 @@
+.standards {
+    $root: &;
+    $gutter: 30px;
+
+    margin: -$gutter;
+
+    &__item {
+        padding: $gutter;
+    }
+
+    @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+
+        &__item {
+            width: p(1, 3);
+        }
+
+    }
+
+}
+
+.standards-item {
+	text-align: center;
+
+    &__icon {
+        flex-shrink: 0;
+        width: 60px;
+        height: 60px;
+        color: color(grey);
+
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+
+	}
+
+	&__title {
+
+		&:not(:last-child) {
+			margin-bottom: 8px;
+		}
+
+	}
+
+    @include tablet {
+
+        &__icon {
+            margin-top: 8px;
+        }
+
+    }
+
+}

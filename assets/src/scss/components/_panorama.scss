@@ -1,0 +1,49 @@
+.panorama {
+    position: relative;
+	padding: 25px 0;
+	line-height: 1.3;
+
+	&__title {
+		font-size: rem(32px);
+
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+
+	}
+
+	&__container {
+
+		.columns__item--small {
+			display: none;
+		}
+
+	}
+
+	&__subtitle {
+		font-size: rem(22px);
+		line-height: 1.6;
+	}
+
+	&__label {
+		color: color(gray);
+	}
+
+	@include tablet {
+		padding: 70px 0;
+
+		&__title {
+			font-size: rem(60px);
+		}
+
+		&__container {
+
+			.columns__item--small {
+				display: block;
+			}
+
+		}
+
+	}
+
+}

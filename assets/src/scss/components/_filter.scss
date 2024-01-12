@@ -1,0 +1,147 @@
+.filter {
+    $root: &;
+    $gutter: 8px;
+
+    display: flex;
+    flex-wrap: wrap;
+    margin: -$gutter;
+    
+    &__item {
+        width: p(1, 4);
+        padding: $gutter;
+
+        &--full-width {
+            display: flex;
+            width: 100%;
+            
+            .filter-item {
+                background: color(grey, lighter);
+                padding: 8px;
+
+                &:first-child {
+                    flex-grow: 1;
+                }
+
+                &:not(:last-child) {
+                    margin-right: 15px;
+                }
+
+            }
+
+        }
+
+    }
+    
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    
+}
+
+.filter-item {
+    $root: &;
+
+    display: flex;
+    flex-direction: column;
+    box-shadow: -1px 1px 5px 0 darken(color(grey, lighter), 20%);
+    
+    &__title {
+        background: color(grey, lighter);
+        padding: 10px;
+        color: color(grey, darker);
+        text-decoration: none;
+        position: relative;
+        z-index: 1;
+    }
+
+    &__inner {
+        display: none;
+        box-shadow: -1px 1px 5px 0 darken(color(grey, lighter), 20%);
+        
+        .is-active & {
+            display: block;
+        }
+
+    }
+
+    &__clear-button {
+        display: flex;
+        justify-content: flex-end;
+        border-bottom: 1px solid color(grey, light);
+    }
+
+    &__clear-button,
+    &__items {
+        padding: 10px;
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+    }
+
+    &__label {
+        flex-grow: 1;
+    }
+
+    &__icon {
+        width: 16px;
+        height: 16px;
+        color: color(grey, darker);
+    }
+    
+    .is-active {
+        
+        #{$root}__inner {
+            display: block;
+        }
+        
+        #{$root}__icon {
+            transform: rotate(180deg);
+            transition: transform .3s ease;
+        }
+
+    }
+
+}
+
+.filter-view {
+    display: flex;
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        
+        &--grid {}
+        
+        &:not(:last-child) {
+            margin-right: 5px;
+        }
+        
+    }
+
+    &__icon {
+        width: 20px;
+        height: 20px;
+        color: black;
+    }
+
+}
+
+.location-form {
+    display: flex;
+    align-items: stretch;
+
+    &__input {
+        flex-grow: 1;
+
+        &:not(:last-child) {
+            margin-right: 15px;
+        }
+
+    }
+
+}

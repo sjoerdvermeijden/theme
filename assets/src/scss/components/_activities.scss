@@ -1,0 +1,63 @@
+.activities {
+	$gutter: 20px;
+
+	margin: -$gutter;
+
+	&__item {
+		padding: $gutter;
+		text-align: center;
+	}
+
+	@include tablet {
+		display: flex;
+		flex-wrap: wrap;
+
+		&__item {
+			width: p(1, 3);
+		}
+
+	}
+
+}
+
+.activity {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
+	&__icon-container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-shrink: 0;
+		width: 80px;
+		height: 80px;
+		background: color(green);
+		box-shadow: 7px 7px 0 2px rgba(0,0,0,0.2);
+
+		&:not(:last-child) {
+			margin-bottom: 25px;
+		}
+
+	}
+
+	&__icon {
+		width: 45px;
+		height: 45px;
+		color: color(gray, lighter);
+	}
+
+	&__content {
+		text-align: center;
+	}
+
+	&__title {
+		color: color(grey, darker);
+
+		&:not(:last-child) {
+			margin-bottom: 5px;
+		}
+
+	}
+
+}

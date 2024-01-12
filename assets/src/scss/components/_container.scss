@@ -1,0 +1,82 @@
+.container {
+    position: relative;
+    text-decoration: none;
+    background: white;
+    color: color(grey, darker);
+    padding: 0;
+    box-shadow: 7px 7px 0 2px rgba(0,0,0,0.2);
+	transition: box-shadow .3s ease;
+
+    &:hover,
+    &:focus {
+		box-shadow: 7px 7px 0 2px rgba(color(green),1);
+    }
+
+	&__title {
+
+		&:not(:last-child) {
+			margin-bottom: 8px;
+		}
+
+	}
+
+    &__image {}
+
+    &__content {
+        padding: 20px;
+		background: color(grey, lighter);
+    }
+
+    &__categories {
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+    }
+
+    &__date {
+        display: flex;
+        align-items: center;
+
+        &:not(:last-child) {
+            margin-bottom: 8px;
+        }
+
+    }
+
+    &__label {
+        margin-top: 3px;
+    }
+
+    &__icon {
+        width: 20px;
+        height: 20px;
+        color: color(grey);
+
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+
+    }
+
+    &__text {
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+    }
+
+	@include tablet {
+		display: flex;
+
+		&__image {
+			min-width: 40%;
+			max-width: 40%;
+		}
+
+	}
+
+}

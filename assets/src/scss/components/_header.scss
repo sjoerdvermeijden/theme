@@ -1,0 +1,56 @@
+.header {
+    $root: &;
+
+	background: none;
+
+    &__wrap {
+        @extend .wrap;
+    }
+
+    &__inner {}
+
+    &__navigation {
+        position: relative;
+        padding: 25px 0;
+        z-index: 1;
+        overflow: hidden;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+
+    }
+
+    &__subtitle {
+        margin-top: -5px;
+    }
+
+	#{$root}__navigation {
+		padding-top: 25px;
+	}
+
+	#{$root}__content {
+		padding-bottom: 0;
+	}
+
+    @include tablet {
+        &__navigation {
+            justify-content: flex-start;
+        }
+
+        &__content {
+            justify-content: flex-start;
+            padding: 0;
+        }
+
+    }
+
+}
