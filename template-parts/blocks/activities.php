@@ -11,9 +11,15 @@ $size = 'illustration';
 
 	<div class="block__padding">
 
-		<div class="block__wrap">
+		<div class="block__wrap block__wrap--small">
 
 			<div class="block__inner">
+
+				<div class="block__header block__header--center">
+
+					<h2 class="block__title">Expertises</h2>
+
+				</div>
 
 				<div class="block__main">
 
