@@ -13,7 +13,7 @@ $title = get_sub_field('title');
 
                 <div class="block__header block__header--center">
 
-                    <?php if(!empty ($title)): ?>
+                    <?php if (!empty($title)) : ?>
                         <h2 class="block__title h2"><?= $title; ?></h2>
                     <?php endif; ?>
 
@@ -21,17 +21,17 @@ $title = get_sub_field('title');
 
                 <div class="block__main">
 
-                    <?php if( have_rows('werkwijze') ): ?>
+                    <?php if (have_rows('werkwijze')) : ?>
 
                         <div class="standards">
 
-                            <?php while ( have_rows('werkwijze') ) : the_row(); ?>
+                            <?php while (have_rows('werkwijze')) : the_row(); ?>
 
                                 <div class="standards__item">
 
                                     <?php $item = get_sub_field('werkwijze_item'); ?>
 
-                                    <?php if(!empty($item)): ?>
+                                    <?php if (!empty($item)) : ?>
 
                                         <?php
                                         $title = $item['werkwijze_title'];
@@ -41,23 +41,23 @@ $title = get_sub_field('title');
 
                                         <div class="standards-item">
 
-                                            <?php if(!empty($icon)): ?>
+                                            <?php if (!empty($icon)) : ?>
 
                                                 <svg class="standards-item__icon icon">
-                                                    <use xlink:href="<?php echo esc_url( home_url( '/app/themes/sjoerdvermeijden/assets/dist/svg/svg-sprite.svg#'. $icon  ) ); ?>"></use>
+                                                    <use xlink:href="<?php echo esc_url(home_url('/themes/sjoerdvermeijden/assets/dist/svg/svg-sprite.svg#' . $icon)); ?>"></use>
                                                 </svg>
 
                                             <?php endif; ?>
 
                                             <div class="standards-item__content">
 
-                                                <?php if(!empty($title)): ?>
+                                                <?php if (!empty($title)) : ?>
 
                                                     <h3 class="standards-item__title h3"><?= $title; ?></h3>
 
                                                 <?php endif; ?>
 
-                                                <?php if(!empty($text)): ?>
+                                                <?php if (!empty($text)) : ?>
 
                                                     <p class="standards-item__text"><?= $text; ?></p>
 
@@ -83,6 +83,6 @@ $title = get_sub_field('title');
 
         </div>
 
-	</div>
+    </div>
 
 </div>

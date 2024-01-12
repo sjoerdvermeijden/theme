@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying the footer
  *
@@ -11,64 +12,64 @@
 
 ?>
 
-	<footer class="footer">
+<footer class="footer">
 
-		<div class="footer__wrap">
+	<div class="footer__wrap">
 
-			<div class="footer__inner">
+		<div class="footer__inner">
 
-				<div class="footer__social">
+			<div class="footer__social">
 
-					<div class="social-media">
+				<div class="social-media">
 
-						<?php if( have_rows('social_items', 'option') ): ?>
+					<?php if (have_rows('social_items', 'option')) : ?>
 
-							<?php while ( have_rows('social_items', 'option') ) : the_row(); ?>
+						<?php while (have_rows('social_items', 'option')) : the_row(); ?>
 
-								<?php
-								$label = get_sub_field('social_label', 'option');
-								$link = get_sub_field('social_link', 'option');
-								?>
+							<?php
+							$label = get_sub_field('social_label', 'option');
+							$link = get_sub_field('social_link', 'option');
+							?>
 
-								<?php if(!empty ($label)): ?>
+							<?php if (!empty($label)) : ?>
 
-									<div class="social-media__item social-media__item--<?= $label; ?>">
+								<div class="social-media__item social-media__item--<?= $label; ?>">
 
-										<a href="<?= $link; ?>" class="social-item" target="_blank">
+									<a href="<?= $link; ?>" class="social-item" target="_blank">
 
-											<div class="social-item__icon icon">
+										<div class="social-item__icon icon">
 
-												<svg>
-													<use xlink:href="<?php echo esc_url( home_url( '/app/themes/sjoerdvermeijden/assets/dist/svg/svg-sprite.svg#' . $label ) ); ?>"></use>
-												</svg>
+											<svg>
+												<use xlink:href="<?php echo esc_url(home_url('/themes/sjoerdvermeijden/assets/dist/svg/svg-sprite.svg#' . $label)); ?>"></use>
+											</svg>
 
-											</div>
+										</div>
 
-										</a>
+									</a>
 
-									</div>
+								</div>
 
-								<?php endif; ?>
+							<?php endif; ?>
 
-							<?php endwhile; ?>
+						<?php endwhile; ?>
 
-						<?php endif; ?>
-
-					</div>
-
-				</div>
-
-				<div class="footer__content">
-
-					<p class="copyright">Handmade by me - <span>sjoerdvermeijden.nl</span> &copy; <?php echo date('Y'); ?></p>
+					<?php endif; ?>
 
 				</div>
 
 			</div>
 
+			<div class="footer__content">
+
+				<p class="copyright">Handmade by me - <span>sjoerdvermeijden.nl</span> &copy; <?php echo date('Y'); ?></p>
+
+			</div>
+
 		</div>
 
-	</footer><!-- #colophon -->
+	</div>
+
+</footer><!-- #colophon -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
@@ -76,12 +77,16 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109780708-1"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-109780708-1');
+	function gtag() {
+		dataLayer.push(arguments);
+	}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-109780708-1');
 </script>
 
 </body>
+
 </html>

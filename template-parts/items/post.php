@@ -3,7 +3,7 @@
     <div class="post__date">
         <span class="post__icon icon">
             <svg>
-                <use xlink:href="<?php echo esc_url( home_url( '/app/themes/sjoerdvermeijden/assets/dist/svg/svg-sprite.svg#calendar' ) ); ?>"></use>
+                <use xlink:href="<?php echo esc_url(home_url('/themes/sjoerdvermeijden/assets/dist/svg/svg-sprite.svg#calendar')); ?>"></use>
             </svg>
         </span>
         <span class="post__label"><?php the_date('n F Y'); ?></span>

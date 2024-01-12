@@ -6,13 +6,13 @@ $size = 'post-image';
 
 <div class="block">
 
-    <div class="block__padding">
+	<div class="block__padding">
 
-        <div class="block__wrap">
+		<div class="block__wrap">
 
-            <div class="block__inner">
+			<div class="block__inner">
 
-				<?php if(!empty ($title)) : ?>
+				<?php if (!empty($title)) : ?>
 
 					<div class="block__header block__header--center">
 
@@ -28,17 +28,17 @@ $size = 'post-image';
 
 						<?php
 						$args = array(
-							'post_type'              => array( 'post' ),
+							'post_type'              => array('post'),
 							'posts_per_page'         => '2'
 						);
 
 						// The Query
-						$query = new WP_Query( $args );
+						$query = new WP_Query($args);
 						?>
 
-						<?php if ( $query->have_posts() ) : ?>
+						<?php if ($query->have_posts()) : ?>
 
-							<?php while ( $query->have_posts() ) : ?>
+							<?php while ($query->have_posts()) : ?>
 								<?php $query->the_post(); ?>
 
 								<div class="news-items__item">
@@ -47,10 +47,10 @@ $size = 'post-image';
 
 										<a href="<?php the_permalink(); ?>" class="news-item__image-link">
 
-											<?php if( has_post_thumbnail() ) : ?>
+											<?php if (has_post_thumbnail()) : ?>
 
 												<figure class="news-item__image">
-													<?php echo wp_get_attachment_image( get_post_thumbnail_id(), $size ); ?>
+													<?php echo wp_get_attachment_image(get_post_thumbnail_id(), $size); ?>
 												</figure>
 
 											<?php endif; ?>
@@ -66,7 +66,7 @@ $size = 'post-image';
 											<div class="news-item__date">
 												<span class="news-item__icon icon">
 													<svg>
-														<use xlink:href="<?php echo esc_url( home_url( '/app/themes/sjoerdvermeijden/assets/dist/svg/svg-sprite.svg#calendar' ) ); ?>"></use>
+														<use xlink:href="<?php echo esc_url(home_url('/themes/sjoerdvermeijden/assets/dist/svg/svg-sprite.svg#calendar')); ?>"></use>
 													</svg>
 												</span>
 												<span class="news-item__label"><?php the_date('n F Y'); ?></span>
@@ -94,8 +94,8 @@ $size = 'post-image';
 
 			</div>
 
-        </div>
+		</div>
 
-    </div>
+	</div>
 
 </div>
