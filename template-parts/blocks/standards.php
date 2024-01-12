@@ -44,7 +44,7 @@ $title = get_sub_field('title');
                                             <?php if (!empty($icon)) : ?>
 
                                                 <svg class="standards-item__icon icon">
-                                                    <use xlink:href="<?php echo esc_url(home_url('/themes/sjoerdvermeijden/assets/dist/svg/svg-sprite.svg#' . $icon)); ?>"></use>
+                                                    <use xlink:href="<?php echo esc_url(home_url('/wp-content/themes/sjoerdvermeijden/assets/dist/svg/svg-sprite.svg#' . $icon)); ?>"></use>
                                                 </svg>
 
                                             <?php endif; ?>

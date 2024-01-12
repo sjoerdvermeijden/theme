@@ -66,7 +66,7 @@ $size = 'post-image';
 											<div class="news-item__date">
 												<span class="news-item__icon icon">
 													<svg>
-														<use xlink:href="<?php echo esc_url(home_url('/themes/sjoerdvermeijden/assets/dist/svg/svg-sprite.svg#calendar')); ?>"></use>
+														<use xlink:href="<?php echo esc_url(home_url('/wp-content/themes/sjoerdvermeijden/assets/dist/svg/svg-sprite.svg#calendar')); ?>"></use>
 													</svg>
 												</span>
 												<span class="news-item__label"><?php the_date('n F Y'); ?></span>

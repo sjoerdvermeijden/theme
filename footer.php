@@ -40,7 +40,7 @@
 										<div class="social-item__icon icon">
 
 											<svg>
-												<use xlink:href="<?php echo esc_url(home_url('/themes/sjoerdvermeijden/assets/dist/svg/svg-sprite.svg#' . $label)); ?>"></use>
+												<use xlink:href="<?php echo esc_url(home_url('/wp-content/themes/sjoerdvermeijden/assets/dist/svg/svg-sprite.svg#' . $label)); ?>"></use>
 											</svg>
 
 										</div>

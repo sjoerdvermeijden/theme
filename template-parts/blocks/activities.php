@@ -38,7 +38,7 @@ $size = 'illustration';
 												<div class="activity__icon-container">
 
 													<svg class="activity__icon icon">
-														<use xlink:href="<?php echo esc_url(home_url('/themes/sjoerdvermeijden/assets/dist/svg/svg-sprite.svg#' . $icon)); ?>"></use>
+														<use xlink:href="<?php echo esc_url(home_url('/wp-content/themes/sjoerdvermeijden/assets/dist/svg/svg-sprite.svg#' . $icon)); ?>"></use>
 													</svg>
 
 												</div>
