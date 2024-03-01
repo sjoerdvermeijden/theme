@@ -133,7 +133,7 @@
 
 		&__item {
 			display: flex;
-			align-items: center;
+			justify-content: flex-start;
 		}
 
 		&__item,
@@ -149,6 +149,10 @@
 
 		&--right {
 
+			#{$root}__item {
+				justify-content: flex-end;
+			}
+			
 			#{$root}__content {
 				display: flex;
 				align-items: flex-end;
