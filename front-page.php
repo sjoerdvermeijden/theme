@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying all pages
  *
@@ -15,13 +16,13 @@
 get_header();
 ?>
 
-	<main class="main">
+<main class="main">
 
-		<?php get_template_part( 'template-parts/blocks/panorama' ); ?>
+	<?php get_template_part('template-parts/blocks/panorama'); ?>
 
-		<?php get_template_part( 'template-parts/flexible-content' ); ?>
+	<?php get_template_part('template-parts/flexible-content'); ?>
 
-	</main>
+</main>
 
 <?php
 get_footer();
