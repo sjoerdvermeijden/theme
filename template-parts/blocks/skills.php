@@ -24,38 +24,28 @@ $text = get_sub_field('text');
 
                 <div class="block__main">
 
-                    <div class="columns">
+                    <?php if (have_rows('skills')): ?>
 
-                        <div class="columns__item">
+                        <div class=" skills js-skills">
 
-                            <?php if (have_rows('skills')): ?>
+                            <?php while (have_rows('skills')) : the_row(); ?>
 
-                                <div class=" skills js-skills">
+                                <?php $label = get_sub_field('skill_label'); ?>
 
-                                    <?php while (have_rows('skills')) : the_row(); ?>
+                                <div class="skills__item">
 
-                                        <?php $label = get_sub_field('skill_label'); ?>
-
-                                        <div class="skills__item">
-
-                                            <div class="skill-item">
-                                                <div class="skill-item__label"><?php the_sub_field('skill'); ?></div>
-                                                <div class="skill-item__shadow"></div>
-                                            </div>
-
-                                        </div>
-
-                                    <?php endwhile; ?>
+                                    <div class="skill-item">
+                                        <div class="skill-item__label"><?php the_sub_field('skill'); ?></div>
+                                        <div class="skill-item__shadow"></div>
+                                    </div>
 
                                 </div>
 
-                            <?php endif; ?>
+                            <?php endwhile; ?>
 
                         </div>
 
-                        <div class="columns__item"></div>
-
-                    </div>
+                    <?php endif; ?>
 
                 </div>
 
@@ -64,5 +54,7 @@ $text = get_sub_field('text');
         </div>
 
     </div>
+
+</div>
 
 </div>
