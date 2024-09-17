@@ -39,7 +39,7 @@ $text = get_sub_field('text');
                                         <div class="skills__item">
 
                                             <div class="skill-item">
-                                                <span class="skill-item__label"><?php the_sub_field('skill'); ?></span>
+                                                <div class="skill-item__label"><?php the_sub_field('skill'); ?></div>
                                                 <div class="skill-item__shadow"></div>
                                             </div>
 
