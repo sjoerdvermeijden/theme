@@ -17,7 +17,11 @@ $size = 'illustration';
 
 				<div class="block__header block__header--center">
 
-					<h2 class="block__title">Expertises</h2>
+					<?php if (!empty($title)): ?>
+
+						<h2 class="block__title"><?php echo $title; ?></h2>
+
+					<?php endif; ?>
 
 				</div>
 
