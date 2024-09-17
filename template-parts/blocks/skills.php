@@ -8,13 +8,13 @@ $text = get_sub_field('text');
 
     <div class="block__padding">
 
-        <div class="block__wrap">
+        <div class="block__wrap block__wrap--small">
 
             <div class="block__inner">
 
                 <div class="block__header block__header--center">
 
-                    <?php if(!empty($title)): ?>
+                    <?php if (!empty($title)): ?>
 
                         <h2 class="block__title h2"><?= $title; ?></h2>
 
@@ -24,28 +24,38 @@ $text = get_sub_field('text');
 
                 <div class="block__main">
 
-                    <?php if( have_rows('skills') ): ?>
+                    <div class="columns">
 
-                        <div class="skills js-skills">
+                        <div class="columns__item">
 
-                            <?php while ( have_rows('skills') ) : the_row(); ?>
+                            <?php if (have_rows('skills')): ?>
 
-                                <?php $label = get_sub_field('skill_label'); ?>
+                                <div class=" skills js-skills">
 
-                                <div class="skills__item">
+                                    <?php while (have_rows('skills')) : the_row(); ?>
 
-                                    <div class="skill-item <?php if( $label ) : ?>skill-item--<?php echo $label; endif ?>">
-                                        <span class="skill-item__decoration"></span>
-                                        <span class="skill-item__label"><?php the_sub_field('skill'); ?></span>
-                                    </div>
+                                        <?php $label = get_sub_field('skill_label'); ?>
+
+                                        <div class="skills__item">
+
+                                            <div class="skill-item">
+                                                <span class="skill-item__label"><?php the_sub_field('skill'); ?></span>
+                                                <div class="skill-item__shadow"></div>
+                                            </div>
+
+                                        </div>
+
+                                    <?php endwhile; ?>
 
                                 </div>
 
-                            <?php endwhile; ?>
+                            <?php endif; ?>
 
                         </div>
 
-                    <?php endif; ?>
+                        <div class="columns__item"></div>
+
+                    </div>
 
                 </div>
 

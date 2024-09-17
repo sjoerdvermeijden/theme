@@ -6,6 +6,7 @@
             "key": "field_5e6fcc6450b1f",
             "label": "Flexible content",
             "name": "flexible_content",
+            "aria-label": "",
             "type": "flexible_content",
             "instructions": "",
             "required": 0,
@@ -26,6 +27,7 @@
                             "key": "field_5ea1e745a00cf",
                             "label": "Afbeelding",
                             "name": "image",
+                            "aria-label": "",
                             "type": "image",
                             "instructions": "",
                             "required": 0,
@@ -50,6 +52,7 @@
                             "key": "field_5fdc72204a456",
                             "label": "Titel",
                             "name": "title",
+                            "aria-label": "",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -69,6 +72,7 @@
                             "key": "field_5e6fcc6d50b20",
                             "label": "Content",
                             "name": "content",
+                            "aria-label": "",
                             "type": "wysiwyg",
                             "instructions": "",
                             "required": 0,
@@ -98,6 +102,7 @@
                             "key": "field_5e9da8fc47fdf",
                             "label": "Titel",
                             "name": "title",
+                            "aria-label": "",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -117,6 +122,7 @@
                             "key": "field_5e9dab9e22131",
                             "label": "Projecten",
                             "name": "projecten",
+                            "aria-label": "",
                             "type": "repeater",
                             "instructions": "",
                             "required": 0,
@@ -130,12 +136,14 @@
                             "min": 0,
                             "max": 0,
                             "layout": "table",
-                            "button_label": "",
+                            "button_label": "Nieuwe regel",
+                            "rows_per_page": 20,
                             "sub_fields": [
                                 {
                                     "key": "field_5e89b68056810",
                                     "label": "Positie",
                                     "name": "position",
+                                    "aria-label": "",
                                     "type": "select",
                                     "instructions": "",
                                     "required": 0,
@@ -149,20 +157,20 @@
                                         "left": "Links",
                                         "right": "Rechts"
                                     },
-                                    "default_value": [
-                                        "left"
-                                    ],
+                                    "default_value": "left",
                                     "allow_null": 0,
                                     "multiple": 0,
                                     "ui": 0,
                                     "ajax": 0,
                                     "return_format": "value",
-                                    "placeholder": ""
+                                    "placeholder": "",
+                                    "parent_repeater": "field_5e9dab9e22131"
                                 },
                                 {
                                     "key": "field_5e6fcce050b24",
                                     "label": "Project",
                                     "name": "project",
+                                    "aria-label": "",
                                     "type": "relationship",
                                     "instructions": "",
                                     "required": 0,
@@ -180,7 +188,9 @@
                                     "elements": "",
                                     "min": 1,
                                     "max": 1,
-                                    "return_format": "object"
+                                    "return_format": "object",
+                                    "bidirectional_target": [],
+                                    "parent_repeater": "field_5e9dab9e22131"
                                 }
                             ]
                         }
@@ -198,6 +208,7 @@
                             "key": "field_5e70b803e23c2",
                             "label": "Titel",
                             "name": "title",
+                            "aria-label": "",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -217,6 +228,7 @@
                             "key": "field_5e70bf918c450",
                             "label": "Werkwijze",
                             "name": "werkwijze",
+                            "aria-label": "",
                             "type": "repeater",
                             "instructions": "",
                             "required": 0,
@@ -230,12 +242,14 @@
                             "min": 0,
                             "max": 0,
                             "layout": "table",
-                            "button_label": "",
+                            "button_label": "Nieuwe regel",
+                            "rows_per_page": 20,
                             "sub_fields": [
                                 {
                                     "key": "field_5e70c0258c451",
                                     "label": "Werkwijze item",
                                     "name": "werkwijze_item",
+                                    "aria-label": "",
                                     "type": "group",
                                     "instructions": "",
                                     "required": 0,
@@ -251,6 +265,7 @@
                                             "key": "field_5e70c0508c452",
                                             "label": "Werkwijze titel",
                                             "name": "werkwijze_title",
+                                            "aria-label": "",
                                             "type": "text",
                                             "instructions": "",
                                             "required": 0,
@@ -270,6 +285,7 @@
                                             "key": "field_5e70c0588c453",
                                             "label": "Werkwijze icon",
                                             "name": "werkwijze_icon",
+                                            "aria-label": "",
                                             "type": "text",
                                             "instructions": "",
                                             "required": 0,
@@ -289,6 +305,7 @@
                                             "key": "field_5e70c05f8c454",
                                             "label": "Werkwijze tekst",
                                             "name": "werkwijze_text",
+                                            "aria-label": "",
                                             "type": "textarea",
                                             "instructions": "",
                                             "required": 0,
@@ -304,7 +321,8 @@
                                             "rows": "",
                                             "new_lines": ""
                                         }
-                                    ]
+                                    ],
+                                    "parent_repeater": "field_5e70bf918c450"
                                 }
                             ]
                         }
@@ -322,6 +340,7 @@
                             "key": "field_5e6fe67b21389",
                             "label": "Titel",
                             "name": "title",
+                            "aria-label": "",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -341,6 +360,7 @@
                             "key": "field_5e6fcd4250b27",
                             "label": "Post",
                             "name": "post",
+                            "aria-label": "",
                             "type": "relationship",
                             "instructions": "",
                             "required": 0,
@@ -358,7 +378,8 @@
                             "elements": "",
                             "min": 1,
                             "max": 3,
-                            "return_format": "object"
+                            "return_format": "object",
+                            "bidirectional_target": []
                         }
                     ],
                     "min": "",
@@ -374,6 +395,7 @@
                             "key": "field_5e6fe8294e5f6",
                             "label": "Titel",
                             "name": "title",
+                            "aria-label": "",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -393,6 +415,7 @@
                             "key": "field_5e760409aa820",
                             "label": "Vaardigheden",
                             "name": "skills",
+                            "aria-label": "",
                             "type": "repeater",
                             "instructions": "",
                             "required": 0,
@@ -406,31 +429,14 @@
                             "min": 0,
                             "max": 0,
                             "layout": "table",
-                            "button_label": "",
+                            "button_label": "Nieuwe regel",
+                            "rows_per_page": 20,
                             "sub_fields": [
-                                {
-                                    "key": "field_5e89ce3213f93",
-                                    "label": "Skill label",
-                                    "name": "skill_label",
-                                    "type": "text",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "default_value": "",
-                                    "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
-                                    "maxlength": ""
-                                },
                                 {
                                     "key": "field_5e7f5edebce45",
                                     "label": "Skill",
                                     "name": "skill",
+                                    "aria-label": "",
                                     "type": "text",
                                     "instructions": "",
                                     "required": 0,
@@ -444,7 +450,8 @@
                                     "placeholder": "",
                                     "prepend": "",
                                     "append": "",
-                                    "maxlength": ""
+                                    "maxlength": "",
+                                    "parent_repeater": "field_5e760409aa820"
                                 }
                             ]
                         }
@@ -462,6 +469,7 @@
                             "key": "field_5fd9e5399ab15",
                             "label": "Titel",
                             "name": "title",
+                            "aria-label": "",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -481,6 +489,7 @@
                             "key": "field_5fd9e5399ab16",
                             "label": "Acitivities",
                             "name": "activities",
+                            "aria-label": "",
                             "type": "repeater",
                             "instructions": "",
                             "required": 0,
@@ -494,12 +503,14 @@
                             "min": 0,
                             "max": 0,
                             "layout": "table",
-                            "button_label": "",
+                            "button_label": "Nieuwe regel",
+                            "rows_per_page": 20,
                             "sub_fields": [
                                 {
                                     "key": "field_5fd9e5c29ab1d",
                                     "label": "Icoon",
                                     "name": "icon",
+                                    "aria-label": "",
                                     "type": "text",
                                     "instructions": "",
                                     "required": 0,
@@ -513,12 +524,14 @@
                                     "placeholder": "",
                                     "prepend": "",
                                     "append": "",
-                                    "maxlength": ""
+                                    "maxlength": "",
+                                    "parent_repeater": "field_5fd9e5399ab16"
                                 },
                                 {
                                     "key": "field_5fd9e5879ab1a",
                                     "label": "Activiteit",
                                     "name": "activity",
+                                    "aria-label": "",
                                     "type": "group",
                                     "instructions": "",
                                     "required": 0,
@@ -534,6 +547,7 @@
                                             "key": "field_5fd9e59a9ab1b",
                                             "label": "Titel",
                                             "name": "title",
+                                            "aria-label": "",
                                             "type": "text",
                                             "instructions": "",
                                             "required": 0,
@@ -553,6 +567,7 @@
                                             "key": "field_5fd9e5ad9ab1c",
                                             "label": "Tekst",
                                             "name": "text",
+                                            "aria-label": "",
                                             "type": "textarea",
                                             "instructions": "",
                                             "required": 0,
@@ -568,7 +583,8 @@
                                             "rows": "",
                                             "new_lines": ""
                                         }
-                                    ]
+                                    ],
+                                    "parent_repeater": "field_5fd9e5399ab16"
                                 }
                             ]
                         }
@@ -586,6 +602,7 @@
                             "key": "field_6055cc86ded7d",
                             "label": "Contact blok",
                             "name": "",
+                            "aria-label": "",
                             "type": "message",
                             "instructions": "",
                             "required": 0,
@@ -628,5 +645,6 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1629966497
+    "show_in_rest": 0,
+    "modified": 1726564671
 }
