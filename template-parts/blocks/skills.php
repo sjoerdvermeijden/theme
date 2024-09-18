@@ -6,6 +6,13 @@ $text = get_sub_field('text');
 
 <div class="block">
 
+    <div class="block__background-illustration block__background-illustration--right">
+        <svg xmlns="http://www.w3.org/2000/svg" width="323.89" height="695.002" viewBox="70.565 -223 323.89 695.002">
+            <path opacity=".5" fill="#AAA" d="M394.455 471.002L70.565 136.501 394.455-197v668.002z" />
+            <path fill="#AAA" d="M394.455 445.002L70.565 110.501 394.455-223v668.002z" />
+        </svg>
+    </div>
+
     <div class="block__padding">
 
         <div class="block__wrap block__wrap--small">
