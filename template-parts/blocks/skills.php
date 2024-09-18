@@ -24,28 +24,37 @@ $text = get_sub_field('text');
 
                 <div class="block__main">
 
-                    <?php if (have_rows('skills')): ?>
+                    <div class="columns">
 
-                        <div class=" skills js-skills">
+                        <div class="columns__item columns__item--centered">
 
-                            <?php while (have_rows('skills')) : the_row(); ?>
+                            <?php if (have_rows('skills')): ?>
 
-                                <?php $label = get_sub_field('skill_label'); ?>
+                                <div class=" skills js-skills">
 
-                                <div class="skills__item">
+                                    <?php while (have_rows('skills')) : the_row(); ?>
 
-                                    <div class="skill-item">
-                                        <div class="skill-item__label"><?php the_sub_field('skill'); ?></div>
-                                        <div class="skill-item__shadow"></div>
-                                    </div>
+                                        <?php $label = get_sub_field('skill_label'); ?>
+
+                                        <div class="skills__item">
+
+                                            <div class="skill-item">
+                                                <?php the_sub_field('skill'); ?>
+                                            </div>
+
+                                        </div>
+
+                                    <?php endwhile; ?>
 
                                 </div>
 
-                            <?php endwhile; ?>
+                            <?php endif; ?>
 
                         </div>
 
-                    <?php endif; ?>
+                        <div class="columns__item"></div>
+
+                    </div>
 
                 </div>
 
