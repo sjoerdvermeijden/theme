@@ -16,12 +16,21 @@
     &:before {
         content: '';
         position: absolute;
-        left: 0;
-        top: 10px;
+        left: 4px;
+        top: 9px;
         height: 13px;
         width: 30px;
-        background: color(grey, darker);
-        box-shadow: 3px 3px 0 1px rgba(0,0,0,0.2);
+        background: color(grey, light);
+    }
+    
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 5px;
+        height: 13px;
+        width: 30px;
+        background: color(grey, lighter);
     }
 
     &__name {
