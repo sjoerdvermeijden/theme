@@ -33,8 +33,8 @@ $title = get_sub_field('title');
                                     <?php while (have_rows('company')): the_row(); ?>
 
                                         <?php $name = get_sub_field('name'); ?>
-                                        <?php $title = get_sub_field('title'); ?>
                                         <?php $year = get_sub_field('year'); ?>
+                                        <?php $description = get_sub_field('description'); ?>
 
                                         <div class="experiences__item">
 
@@ -42,19 +42,19 @@ $title = get_sub_field('title');
 
                                                 <?php if (!empty($name)): ?>
 
-                                                    <h3 class="experience__title"><?php echo $name; ?></h3>
-
-                                                <?php endif; ?>
-
-                                                <?php if (!empty($title)): ?>
-
-                                                    <p class="experience__title"><?php echo $title; ?></p>
+                                                    <h3 class="experience__name"><?php echo $name; ?></h3>
 
                                                 <?php endif; ?>
 
                                                 <?php if (!empty($year)): ?>
 
                                                     <p class="experience__year"><?php echo $year; ?></p>
+
+                                                <?php endif; ?>
+
+                                                <?php if (!empty($title)): ?>
+
+                                                    <p class="experience__description"><?php echo $description; ?></p>
 
                                                 <?php endif; ?>
 

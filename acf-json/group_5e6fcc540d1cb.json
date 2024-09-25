@@ -358,27 +358,6 @@
                                             "append": ""
                                         },
                                         {
-                                            "key": "field_66f3bb28e70fa",
-                                            "label": "Title",
-                                            "name": "title",
-                                            "aria-label": "",
-                                            "type": "text",
-                                            "instructions": "",
-                                            "required": 0,
-                                            "conditional_logic": 0,
-                                            "wrapper": {
-                                                "width": "50",
-                                                "class": "",
-                                                "id": ""
-                                            },
-                                            "default_value": "",
-                                            "maxlength": "",
-                                            "allow_in_bindings": 0,
-                                            "placeholder": "",
-                                            "prepend": "",
-                                            "append": ""
-                                        },
-                                        {
                                             "key": "field_66f3bb31e70fb",
                                             "label": "Year",
                                             "name": "year",
@@ -388,7 +367,7 @@
                                             "required": 0,
                                             "conditional_logic": 0,
                                             "wrapper": {
-                                                "width": "",
+                                                "width": "50",
                                                 "class": "",
                                                 "id": ""
                                             },
@@ -483,5 +462,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1727249296
+    "modified": 1727250816
 }

@@ -2,6 +2,7 @@ import ScrollReveal from "scrollreveal";
 
 window.addEventListener("DOMContentLoaded", () => {
 	const image = document.querySelectorAll(".js-image");
+	const experience = document.querySelectorAll('.js-experience');
 
 	const leftReveal = {
 		distance: "130px",
@@ -21,6 +22,7 @@ window.addEventListener("DOMContentLoaded", () => {
 		if (x.matches) {
 			// If media query matches
 			ScrollReveal().reveal(image, leftReveal);
+			ScrollReveal().reveal(experience, leftReveal);
 		}
 	}
 

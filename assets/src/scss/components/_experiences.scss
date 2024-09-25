@@ -1,0 +1,32 @@
+.experiences {
+
+    &__item {
+        
+
+        &:not(:last-child) {
+            margin-bottom: 35px;
+        }
+    }
+}
+
+.experience {
+    position: relative;
+    padding-left: 50px;
+
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 10px;
+        height: 13px;
+        width: 30px;
+        background: color(grey, darker);
+        box-shadow: 3px 3px 0 1px rgba(0,0,0,0.2);
+    }
+
+    &__name {
+        text-transform: uppercase;
+        line-height: 0.8;
+    }
+
+}
