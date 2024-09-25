@@ -198,193 +198,6 @@
                     "min": "",
                     "max": ""
                 },
-                "layout_5e70b803e23c1": {
-                    "key": "layout_5e70b803e23c1",
-                    "name": "standards",
-                    "label": "Standaarden",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_5e70b803e23c2",
-                            "label": "Titel",
-                            "name": "title",
-                            "aria-label": "",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "50",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_5e70bf918c450",
-                            "label": "Werkwijze",
-                            "name": "werkwijze",
-                            "aria-label": "",
-                            "type": "repeater",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "collapsed": "",
-                            "min": 0,
-                            "max": 0,
-                            "layout": "table",
-                            "button_label": "Nieuwe regel",
-                            "rows_per_page": 20,
-                            "sub_fields": [
-                                {
-                                    "key": "field_5e70c0258c451",
-                                    "label": "Werkwijze item",
-                                    "name": "werkwijze_item",
-                                    "aria-label": "",
-                                    "type": "group",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "50",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "layout": "block",
-                                    "sub_fields": [
-                                        {
-                                            "key": "field_5e70c0508c452",
-                                            "label": "Werkwijze titel",
-                                            "name": "werkwijze_title",
-                                            "aria-label": "",
-                                            "type": "text",
-                                            "instructions": "",
-                                            "required": 0,
-                                            "conditional_logic": 0,
-                                            "wrapper": {
-                                                "width": "",
-                                                "class": "",
-                                                "id": ""
-                                            },
-                                            "default_value": "",
-                                            "placeholder": "",
-                                            "prepend": "",
-                                            "append": "",
-                                            "maxlength": ""
-                                        },
-                                        {
-                                            "key": "field_5e70c0588c453",
-                                            "label": "Werkwijze icon",
-                                            "name": "werkwijze_icon",
-                                            "aria-label": "",
-                                            "type": "text",
-                                            "instructions": "",
-                                            "required": 0,
-                                            "conditional_logic": 0,
-                                            "wrapper": {
-                                                "width": "",
-                                                "class": "",
-                                                "id": ""
-                                            },
-                                            "default_value": "",
-                                            "placeholder": "",
-                                            "prepend": "",
-                                            "append": "",
-                                            "maxlength": ""
-                                        },
-                                        {
-                                            "key": "field_5e70c05f8c454",
-                                            "label": "Werkwijze tekst",
-                                            "name": "werkwijze_text",
-                                            "aria-label": "",
-                                            "type": "textarea",
-                                            "instructions": "",
-                                            "required": 0,
-                                            "conditional_logic": 0,
-                                            "wrapper": {
-                                                "width": "",
-                                                "class": "",
-                                                "id": ""
-                                            },
-                                            "default_value": "",
-                                            "placeholder": "",
-                                            "maxlength": "",
-                                            "rows": "",
-                                            "new_lines": ""
-                                        }
-                                    ],
-                                    "parent_repeater": "field_5e70bf918c450"
-                                }
-                            ]
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
-                "layout_5e6fcd1550b25": {
-                    "key": "layout_5e6fcd1550b25",
-                    "name": "posts",
-                    "label": "Berichten",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_5e6fe67b21389",
-                            "label": "Titel",
-                            "name": "title",
-                            "aria-label": "",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_5e6fcd4250b27",
-                            "label": "Post",
-                            "name": "post",
-                            "aria-label": "",
-                            "type": "relationship",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "post_type": [
-                                "post"
-                            ],
-                            "taxonomy": "",
-                            "filters": "",
-                            "elements": "",
-                            "min": 1,
-                            "max": 3,
-                            "return_format": "object",
-                            "bidirectional_target": []
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
                 "layout_5e6fcd6150b28": {
                     "key": "layout_5e6fcd6150b28",
                     "name": "skills",
@@ -459,14 +272,14 @@
                     "min": "",
                     "max": ""
                 },
-                "layout_5fd9e5399ab14": {
-                    "key": "layout_5fd9e5399ab14",
-                    "name": "activities",
-                    "label": "Activiteiten",
+                "layout_66f3b5e4a67c6": {
+                    "key": "layout_66f3b5e4a67c6",
+                    "name": "experiences",
+                    "label": "Ervaringen",
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5fd9e5399ab15",
+                            "key": "field_66f3b5e4a67c7",
                             "label": "Titel",
                             "name": "title",
                             "aria-label": "",
@@ -480,15 +293,16 @@
                                 "id": ""
                             },
                             "default_value": "",
+                            "maxlength": "",
+                            "allow_in_bindings": 1,
                             "placeholder": "",
                             "prepend": "",
-                            "append": "",
-                            "maxlength": ""
+                            "append": ""
                         },
                         {
-                            "key": "field_5fd9e5399ab16",
-                            "label": "Acitivities",
-                            "name": "activities",
+                            "key": "field_66f3b6f350950",
+                            "label": "Ervaringen",
+                            "name": "experiences",
                             "aria-label": "",
                             "type": "repeater",
                             "instructions": "",
@@ -499,38 +313,17 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "collapsed": "",
+                            "layout": "table",
                             "min": 0,
                             "max": 0,
-                            "layout": "table",
+                            "collapsed": "",
                             "button_label": "Nieuwe regel",
                             "rows_per_page": 20,
                             "sub_fields": [
                                 {
-                                    "key": "field_5fd9e5c29ab1d",
-                                    "label": "Icoon",
-                                    "name": "icon",
-                                    "aria-label": "",
-                                    "type": "text",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "default_value": "",
-                                    "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
-                                    "maxlength": "",
-                                    "parent_repeater": "field_5fd9e5399ab16"
-                                },
-                                {
-                                    "key": "field_5fd9e5879ab1a",
-                                    "label": "Activiteit",
-                                    "name": "activity",
+                                    "key": "field_66f3bb09e70f8",
+                                    "label": "Company",
+                                    "name": "company",
                                     "aria-label": "",
                                     "type": "group",
                                     "instructions": "",
@@ -544,9 +337,51 @@
                                     "layout": "block",
                                     "sub_fields": [
                                         {
-                                            "key": "field_5fd9e59a9ab1b",
-                                            "label": "Titel",
+                                            "key": "field_66f3bb1ee70f9",
+                                            "label": "Name",
+                                            "name": "name",
+                                            "aria-label": "",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "50",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "",
+                                            "maxlength": "",
+                                            "allow_in_bindings": 0,
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": ""
+                                        },
+                                        {
+                                            "key": "field_66f3bb28e70fa",
+                                            "label": "Title",
                                             "name": "title",
+                                            "aria-label": "",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "50",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "",
+                                            "maxlength": "",
+                                            "allow_in_bindings": 0,
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": ""
+                                        },
+                                        {
+                                            "key": "field_66f3bb31e70fb",
+                                            "label": "Year",
+                                            "name": "year",
                                             "aria-label": "",
                                             "type": "text",
                                             "instructions": "",
@@ -558,15 +393,16 @@
                                                 "id": ""
                                             },
                                             "default_value": "",
+                                            "maxlength": "",
+                                            "allow_in_bindings": 0,
                                             "placeholder": "",
                                             "prepend": "",
-                                            "append": "",
-                                            "maxlength": ""
+                                            "append": ""
                                         },
                                         {
-                                            "key": "field_5fd9e5ad9ab1c",
-                                            "label": "Tekst",
-                                            "name": "text",
+                                            "key": "field_66f3bb39e70fc",
+                                            "label": "Description",
+                                            "name": "description",
                                             "aria-label": "",
                                             "type": "textarea",
                                             "instructions": "",
@@ -578,13 +414,14 @@
                                                 "id": ""
                                             },
                                             "default_value": "",
-                                            "placeholder": "",
                                             "maxlength": "",
+                                            "allow_in_bindings": 1,
                                             "rows": "",
+                                            "placeholder": "",
                                             "new_lines": ""
                                         }
                                     ],
-                                    "parent_repeater": "field_5fd9e5399ab16"
+                                    "parent_repeater": "field_66f3b6f350950"
                                 }
                             ]
                         }
@@ -621,9 +458,9 @@
                     "max": ""
                 }
             },
-            "button_label": "Nieuwe regel",
             "min": "",
-            "max": ""
+            "max": "",
+            "button_label": "Nieuwe regel"
         }
     ],
     "location": [
@@ -646,5 +483,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1726564671
+    "modified": 1727249296
 }
