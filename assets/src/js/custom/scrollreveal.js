@@ -10,6 +10,13 @@ window.addEventListener("DOMContentLoaded", () => {
 		origin: "left",
 		delay: 40,
 	};
+	
+	const leftRevealing = {
+		distance: "130px",
+		duration: 1500,
+		origin: "left",
+		delay: 60,
+	};
 
 	const rightReveal = {
 		distance: "80px",
@@ -22,7 +29,7 @@ window.addEventListener("DOMContentLoaded", () => {
 		if (x.matches) {
 			// If media query matches
 			ScrollReveal().reveal(image, leftReveal);
-			ScrollReveal().reveal(experience, leftReveal);
+			ScrollReveal().reveal(experience, leftRevealing);
 		}
 	}
 

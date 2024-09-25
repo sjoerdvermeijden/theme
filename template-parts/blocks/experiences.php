@@ -38,7 +38,7 @@ $title = get_sub_field('title');
 
                                         <div class="experiences__item">
 
-                                            <div class="experience">
+                                            <div class="experience js-experience">
 
                                                 <?php if (!empty($name)): ?>
 
