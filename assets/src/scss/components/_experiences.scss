@@ -1,21 +1,11 @@
 .experiences {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 
-    &__item {
-        
+    &__item {}
 
-        &:not(:last-child) {
-            margin-bottom: 35px;
-        }
-    }
-
-    @include tablet {
-        // display: flex;
-        // flex-wrap: wrap;
-
-        // &__item {
-        //     width: p(1, 2);
-        // }
-    }
+    @include tablet {}
 }
 
 .experience {
