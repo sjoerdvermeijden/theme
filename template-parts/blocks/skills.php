@@ -38,9 +38,7 @@ $text = get_sub_field('text');
 
                                         <div class="skills__item">
 
-                                            <div class="skill-item">
-                                                <?php the_sub_field('skill'); ?>
-                                            </div>
+                                            <div class="skill-item">- <?php the_sub_field('skill'); ?></div>
 
                                         </div>
 
