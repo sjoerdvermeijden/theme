@@ -126,7 +126,7 @@ add_action('widgets_init', 'sjoerdvermeijden_widgets_init');
 function sjoerdvermeijden_scripts()
 {
 
-	wp_enqueue_style('sjoerd-styles', get_template_directory_uri() . '/assets/dist/css/style.min.css', false, '1.6.2', 'all');
+	wp_enqueue_style('sjoerd-styles', get_template_directory_uri() . '/assets/dist/css/style.min.css', false, '1.6.3', 'all');
 
 	wp_enqueue_script('sjoerd-scripts', get_template_directory_uri() . '/assets/dist/js/script.min.js', array(), '1.1.0', true);
 
