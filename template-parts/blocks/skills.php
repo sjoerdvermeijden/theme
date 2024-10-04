@@ -30,21 +30,21 @@ $text = get_sub_field('text');
 
                             <?php if (have_rows('skills')): ?>
 
-                                <div class=" skills js-skills">
+                                <ul class=" skills js-skills">
 
                                     <?php while (have_rows('skills')) : the_row(); ?>
 
                                         <?php $label = get_sub_field('skill_label'); ?>
 
-                                        <div class="skills__item">
+                                        <li class="skills__item">
 
-                                            <div class="skill-item">- <?php the_sub_field('skill'); ?></div>
+                                            <span class="skill-item"><?php the_sub_field('skill'); ?></span>
 
-                                        </div>
+                                        </li>
 
                                     <?php endwhile; ?>
 
-                                </div>
+                                </ul>
 
                             <?php endif; ?>
 
