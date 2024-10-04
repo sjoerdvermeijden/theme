@@ -12,7 +12,7 @@ $text = get_sub_field('text');
 
             <div class="block__inner">
 
-                <div class="block__header block__header--center">
+                <div class="block__header">
 
                     <?php if (!empty($title)): ?>
 
