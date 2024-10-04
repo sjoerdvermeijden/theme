@@ -18,46 +18,36 @@
 
 		<div class="footer__inner">
 
-			<div class="footer__social">
+			<?php if (have_rows('contact_items', 'option')) : ?>
 
-				<div class="social-media">
+				<ul class="contact-items">
 
-					<?php if (have_rows('contact_items', 'option')) : ?>
+					<?php while (have_rows('contact_items', 'option')) : the_row(); ?>
 
-						<?php while (have_rows('contact_items', 'option')) : the_row(); ?>
+						<?php
+						$label = get_sub_field('contact_label', 'option');
+						$link = get_sub_field('contact_link', 'option');
+						?>
 
-							<?php
-							$label = get_sub_field('contact_label', 'option');
-							$link = get_sub_field('contact_link', 'option');
-							?>
+						<?php if (!empty($label)) : ?>
 
-							<?php if (!empty($label)) : ?>
+							<li class="contact-items__item">
 
-								<div class="social-media__item social-media__item--<?= $label; ?>">
+								<a href="<?= $link; ?>" class="contact-item" target="_blank">
 
-									<a href="<?= $link; ?>" class="social-item" target="_blank">
+									<?php echo $label; ?>
 
-										<div class="social-item__icon icon">
+								</a>
 
-											<svg>
-												<use xlink:href="<?php echo esc_url(home_url('/wp-content/themes/sjoerdvermeijden/assets/dist/svg/svg-sprite.svg#' . $label)); ?>"></use>
-											</svg>
+							</li>
 
-										</div>
+						<?php endif; ?>
 
-									</a>
+					<?php endwhile; ?>
 
-								</div>
+				</ul>
 
-							<?php endif; ?>
-
-						<?php endwhile; ?>
-
-					<?php endif; ?>
-
-				</div>
-
-			</div>
+			<?php endif; ?>
 
 			<div class="footer__content">
 

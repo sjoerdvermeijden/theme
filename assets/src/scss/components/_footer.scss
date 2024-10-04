@@ -13,14 +13,6 @@
         align-items: center;
     }
 
-    &__social {
-
-        &:not(:last-child) {
-            margin-bottom: 25px;
-        }
-
-    }
-
     &__content {
         display: flex;
         flex-direction: column;

@@ -62,6 +62,37 @@
 
 								<?php get_template_part('template-parts/logo'); ?>
 
+								<?php if (have_rows('contact_items', 'option')) : ?>
+
+									<ul class="contact-items">
+
+										<?php while (have_rows('contact_items', 'option')) : the_row(); ?>
+
+											<?php
+											$label = get_sub_field('contact_label', 'option');
+											$link = get_sub_field('contact_link', 'option');
+											?>
+
+											<?php if (!empty($label)) : ?>
+
+												<li class="contact-items__item">
+
+													<a href="<?= $link; ?>" class="contact-item" target="_blank">
+
+														<?php echo $label; ?>
+
+													</a>
+
+												</li>
+
+											<?php endif; ?>
+
+										<?php endwhile; ?>
+
+									</ul>
+
+								<?php endif; ?>
+
 							</div>
 
 						</div>
