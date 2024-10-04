@@ -6,6 +6,7 @@
             "key": "field_6047cb4785e4a",
             "label": "Contact tekst",
             "name": "contact_text",
+            "aria-label": "",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -22,9 +23,10 @@
             "delay": 0
         },
         {
-            "key": "field_5e6fe1145b9b4",
+            "key": "field_66ffbc76a79c6",
             "label": "Contact items",
             "name": "contact_items",
+            "aria-label": "",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -34,35 +36,19 @@
                 "class": "",
                 "id": ""
             },
-            "collapsed": "",
-            "min": 3,
-            "max": 3,
             "layout": "table",
-            "button_label": "",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Nieuwe regel",
+            "rows_per_page": 20,
             "sub_fields": [
                 {
-                    "key": "field_5e6fe11a5b9b5",
-                    "label": "Contact icon",
-                    "name": "contact_icon",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                },
-                {
-                    "key": "field_5e6fe1225b9b6",
+                    "key": "field_66ffbc81a79c7",
                     "label": "Contact label",
                     "name": "contact_label",
+                    "aria-label": "",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -73,10 +59,34 @@
                         "id": ""
                     },
                     "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "maxlength": ""
+                    "parent_repeater": "field_66ffbc76a79c6"
+                },
+                {
+                    "key": "field_66ffbc89a79c8",
+                    "label": "Contact link",
+                    "name": "contact_link",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_66ffbc76a79c6"
                 }
             ]
         }
@@ -98,5 +108,6 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1616235760
+    "show_in_rest": 0,
+    "modified": 1728035993
 }

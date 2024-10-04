@@ -22,13 +22,13 @@
 
 				<div class="social-media">
 
-					<?php if (have_rows('social_items', 'option')) : ?>
+					<?php if (have_rows('contact_items', 'option')) : ?>
 
-						<?php while (have_rows('social_items', 'option')) : the_row(); ?>
+						<?php while (have_rows('contact_items', 'option')) : the_row(); ?>
 
 							<?php
-							$label = get_sub_field('social_label', 'option');
-							$link = get_sub_field('social_link', 'option');
+							$label = get_sub_field('contact_label', 'option');
+							$link = get_sub_field('contact_link', 'option');
 							?>
 
 							<?php if (!empty($label)) : ?>
