@@ -128,7 +128,7 @@ function sjoerdvermeijden_scripts()
 
 	wp_enqueue_style('sjoerd-styles', get_template_directory_uri() . '/assets/dist/css/style.min.css', false, '1.6.7', 'all');
 
-	wp_enqueue_script('sjoerd-scripts', get_template_directory_uri() . '/assets/dist/js/script.min.js', array(), '1.1.0', true);
+	wp_enqueue_script('sjoerd-scripts', get_template_directory_uri() . '/assets/dist/js/script.min.js', array(), '1.1.1', true);
 
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
 		wp_enqueue_script('comment-reply');

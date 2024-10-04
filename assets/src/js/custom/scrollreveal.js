@@ -2,20 +2,12 @@ import ScrollReveal from "scrollreveal";
 
 window.addEventListener("DOMContentLoaded", () => {
 	const image = document.querySelectorAll(".js-image");
-	const experience = document.querySelectorAll('.js-experience');
 
 	const leftReveal = {
 		distance: "130px",
 		duration: 1000,
 		origin: "left",
 		delay: 40,
-	};
-	
-	const leftRevealing = {
-		distance: "130px",
-		duration: 1500,
-		origin: "left",
-		delay: 60,
 	};
 
 	const rightReveal = {
@@ -29,7 +21,6 @@ window.addEventListener("DOMContentLoaded", () => {
 		if (x.matches) {
 			// If media query matches
 			ScrollReveal().reveal(image, leftReveal);
-			ScrollReveal().reveal(experience, leftRevealing);
 		}
 	}
 
